@@ -1,0 +1,104 @@
+2021-10-14 18:09:44,497 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 91trialapi.ashermed.cn:80
+2021-10-14 18:09:44,737 - urllib3.connectionpool - DEBUG - http://91trialapi.ashermed.cn:80 "POST /api/v3/Login/SingleSignOnByLoginId?api-version=3 HTTP/1.1" 200 238
+2021-10-14 18:09:44,738 - root - INFO - {'loginId': '13681899297', 'loginPwd': '899297', 'isExclusiveLogin': True, 'clientId': '5ad5b1b17dcc44ba5e15788b087ceea1', 'clientType': 1}
+2021-10-14 18:09:44,740 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:44,923 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:09:44,961 - root - INFO - {'projectId': 1074, 'stageId': 1, 'basicData': {'name': '自动化测试进行Test2021-10-14 18:09:44', 'applicant': '张慧霞', 'department': '37', 'departmentName': '超声科', 'contactPerson': '测测', 'contactInfo': '13671679931', 'sampleSize': 111, 'indicationRange': 2, 'researchType': 1, 'researchRisk': 1, 'isApprovedProject': 1, 'globalCooperation': 1, 'fundingSource': 1, 'participationWay': 1, 'researchFundingType': 1, 'sourceTopics': '测试', 'projectTime': '2021-10-11', 'leadUnit': '侧是是是', 'sponsor': '', 'contactEmail': 'hao.xu@ashermed.com', 'ifTheStarting': 1}, 'isCompleted': True}
+2021-10-14 18:09:44,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:45,102 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:09:45,102 - root - INFO - <Response [200]>
+2021-10-14 18:09:45,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:45,351 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:09:45,353 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:45,596 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:09:45,598 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:45,782 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:09:45,785 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:45,940 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/submit HTTP/1.1" 200 103
+2021-10-14 18:09:45,943 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,117 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,117 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,119 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,228 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,230 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,230 - root - INFO - 项目概况表审核重置成功
+2021-10-14 18:09:46,237 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,351 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,352 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,352 - root - INFO - 合作单位审核成功
+2021-10-14 18:09:46,354 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,498 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,499 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,500 - root - INFO - 合作单位审核重置成功
+2021-10-14 18:09:46,504 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,611 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,613 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,613 - root - INFO - 研究者履历表审核成功
+2021-10-14 18:09:46,618 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,731 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,732 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,733 - root - INFO - 研究者履历表审核重置成功
+2021-10-14 18:09:46,738 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:46,877 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:46,878 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:46,878 - root - INFO - 临床研究项目申请书成功
+2021-10-14 18:09:46,883 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:47,028 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:47,029 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:47,029 - root - INFO - 知情同意书添加意见成功
+2021-10-14 18:09:47,031 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:47,205 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:47,207 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:47,207 - root - INFO - 知情同意书审核重置成功
+2021-10-14 18:09:47,212 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:47,361 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 103
+2021-10-14 18:09:47,362 - root - INFO - {'gatewayStatus': 1, 'gatewayMessage': '成功', 'detailedStatus': 1, 'detailedMessage': '成功', 'data': True}
+2021-10-14 18:09:47,363 - root - INFO - 知情同意书审核成功
+2021-10-14 18:09:47,367 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:47,576 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/OneClickPass HTTP/1.1" 200 103
+2021-10-14 18:09:47,577 - root - INFO - 知情同意书审核成功
+2021-10-14 18:09:47,582 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:47,732 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:49,742 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:49,841 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:51,846 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:51,950 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:51,955 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:52,054 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:54,062 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:54,172 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:56,176 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:56,385 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:56,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:57,066 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:09:59,086 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:09:59,201 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:10:01,205 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:01,320 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/ResearchAudit HTTP/1.1" 200 141
+2021-10-14 18:10:01,323 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:01,400 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/v3/User/GetAccountSignature?api-version=3 HTTP/1.1" 200 196
+2021-10-14 18:10:01,401 - root - INFO - 查询成功
+2021-10-14 18:10:01,403 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:01,649 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:10:01,650 - root - INFO - 提交伦理材料成功
+2021-10-14 18:10:01,652 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:01,807 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:10:01,808 - root - INFO - 人遗调查表提交成功
+2021-10-14 18:10:01,809 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:01,958 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 18:10:01,959 - root - INFO - 临床研究网站注册提交成功
+2021-10-14 18:10:01,961 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:02,280 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/submit HTTP/1.1" 200 103
+2021-10-14 18:10:02,281 - root - INFO - 提交申请材料成功
+2021-10-14 18:10:02,282 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:02,379 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/ProjectReport/SaveReportRecord HTTP/1.1" 200 322
+2021-10-14 18:10:02,380 - root - INFO - 保存伦理批件成功
+2021-10-14 18:10:02,382 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:02,526 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/Ethical/GeneticApproval HTTP/1.1" 200 91
+2021-10-14 18:10:02,527 - root - INFO - 人遗调查表审核成功
+2021-10-14 18:10:02,529 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:04,082 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/Confirm HTTP/1.1" 200 103
+2021-10-14 18:10:04,083 - root - INFO - 确认立项成功
+2021-10-14 18:10:04,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 18:10:04,243 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/delete HTTP/1.1" 200 103
+2021-10-14 18:10:04,244 - root - INFO - 删除项目成功

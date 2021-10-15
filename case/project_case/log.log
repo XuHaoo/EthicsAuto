@@ -1,0 +1,7 @@
+2021-10-14 15:09:43,017 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 91trialapi.ashermed.cn:80
+2021-10-14 15:09:43,232 - urllib3.connectionpool - DEBUG - http://91trialapi.ashermed.cn:80 "POST /api/v3/Login/SingleSignOnByLoginId?api-version=3 HTTP/1.1" 200 238
+2021-10-14 15:09:43,233 - root - INFO - {'loginId': '13681899297', 'loginPwd': '899297', 'isExclusiveLogin': True, 'clientId': '5ad5b1b17dcc44ba5e15788b087ceea1', 'clientType': 1}
+2021-10-14 15:09:43,236 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 15:09:43,397 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
+2021-10-14 15:09:43,514 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): gcpmsapi.ashermed.cn:80
+2021-10-14 15:09:43,726 - urllib3.connectionpool - DEBUG - http://gcpmsapi.ashermed.cn:80 "POST /api/Project/save HTTP/1.1" 200 103
