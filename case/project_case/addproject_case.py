@@ -4,7 +4,7 @@ import unittest
 import requests
 from public.ethics_public.ethics_login import ethics
 from public.ethics_public.projectId import edproject
-from unittestreport import rerun
+# from unittestreport import rerun
 
 
 class Addprojectcase(unittest.TestCase):
