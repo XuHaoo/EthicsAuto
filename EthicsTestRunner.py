@@ -80,6 +80,5 @@ with(open(report, 'wb')) as fp:
     attachments 附件
     """
     # # 发邮件功能
-    smtp = SMTP(user="hao.xu@ashermed.com", password="wXstg83bw5jVwEEv", host="smtp.qiye.aliyun.com")
+    smtp = SMTP(user="2445955870@qq.com", password="uezqtcwexllveaii", host="smtp.qq.com")
     smtp.sender(to="test@ashermed.com", attachments=report)
-
