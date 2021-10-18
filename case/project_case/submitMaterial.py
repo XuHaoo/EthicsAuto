@@ -6,7 +6,7 @@ import requests
 import time
 from public.ethics_public.ethics_login import ethics
 from public.ethics_public.projectId import edproject
-from unittestreport import rerun
+# from unittestreport import rerun
 
 # 获取当前时间
 now_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
