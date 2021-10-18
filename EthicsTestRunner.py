@@ -7,7 +7,6 @@ from case.project_case.addproject_case import Addprojectcase
 from case.project_case.submitMaterial import MyTestCase
 from TestRunner import SMTP
 
-
 # 创建测试套件
 suite = unittest.TestSuite()
 
