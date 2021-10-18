@@ -1,5 +1,4 @@
 import logging
-from public.ethics_public.log import MyTestCase
 import time
 import unittest
 import requests
