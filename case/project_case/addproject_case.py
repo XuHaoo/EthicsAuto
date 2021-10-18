@@ -606,7 +606,7 @@ class Addprojectcase(unittest.TestCase):
     # interval：指定每次重运行的时间间隔
     # 引入from unittestreport import rerun
     # 缺点是每个方法都需要进行引入
-    @rerun(count=3,interval=2)
+    # @rerun(count=3,interval=2)
     def test017_addprojectcase(self):
         """临床研究合同书审核"""
         url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
