@@ -4,6 +4,7 @@ import unittest
 import requests
 from public.ethics_public.ethics_login import ethics
 from public.ethics_public.projectId import edproject
+from public.ethics_public import host
 # from unittestreport import rerun
 
 
@@ -13,7 +14,7 @@ class Addprojectcase(unittest.TestCase):
         """新增项目--项目概况表信息"""
         # 获取当前时间
         now_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -67,7 +68,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test002_addprojectcase(self):
         """添加研究者履历"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -124,8 +125,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test003_addprojectcase(self):
         """ 新增文件信息"""
-
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -164,8 +164,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test004_addprojectcase(self):
         """合作单位"""
-
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -215,8 +214,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test005_addprojectcase(self):
         """提交申请"""
-
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/submit'
+        url = host + '/Project/submit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -243,7 +241,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test006_addprojectcase(self):
         """项目概况表审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host +  '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -274,7 +272,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test007_addprojectcase(self):
         """项目概况表审核重置"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -307,7 +305,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test008_addprojectcase(self):
         """合作单位审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -340,7 +338,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test009_addprojectcase(self):
         """合作单位审核重置"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -373,7 +371,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test010_addprojectcase(self):
         """研究者履历表审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -406,7 +404,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test011_addprojectcase(self):
         """研究者履历表审核重置"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -440,7 +438,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test012_addprojectcase(self):
         """临床研究项目申请书"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -473,7 +471,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test013_addprojectcase(self):
         """知情同意书添加意见"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -506,7 +504,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test014_addprojectcase(self):
         """知情同意书审核重置"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -539,7 +537,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test015_addprojectcase(self):
         """知情同意书审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -572,7 +570,7 @@ class Addprojectcase(unittest.TestCase):
 
     def test016_addprojectcase(self):
         """一键通过审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/OneClickPass'
+        url = host + '/Project/OneClickPass'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -609,7 +607,7 @@ class Addprojectcase(unittest.TestCase):
     # @rerun(count=3,interval=2)
     def test017_addprojectcase(self):
         """临床研究合同书审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/ResearchAudit'
+        url = host + '/Project/ResearchAudit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',

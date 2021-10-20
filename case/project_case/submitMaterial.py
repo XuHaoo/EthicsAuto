@@ -6,6 +6,7 @@ import requests
 import time
 from public.ethics_public.ethics_login import ethics
 from public.ethics_public.projectId import edproject
+from public.ethics_public import host
 # from unittestreport import rerun
 
 # 获取当前时间
@@ -16,7 +17,7 @@ class MyTestCase(unittest.TestCase):
 
     def test001subMater(self):
         """点击提交材料"""
-        url = 'http://gcpmsapi.ashermed.cn/api/v3/User/GetAccountSignature?api-version=3'
+        url = host + '/v3/User/GetAccountSignature?api-version=3'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -41,7 +42,7 @@ class MyTestCase(unittest.TestCase):
 
     def test002saveMater(self):
         """提交伦理材料"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -90,7 +91,7 @@ class MyTestCase(unittest.TestCase):
 
     def test003manMater(self):
         """人遗调查表提交"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -150,7 +151,7 @@ class MyTestCase(unittest.TestCase):
 
     def test004badMater(self):
         """临床研究网站注册提交"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/save'
+        url = host + '/Project/save'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -181,7 +182,7 @@ class MyTestCase(unittest.TestCase):
 
     def test005smMater(self):
         """提交申请材料"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/submit'
+        url = host + '/Project/submit'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -208,7 +209,7 @@ class MyTestCase(unittest.TestCase):
 
     def test006saMater(self):
         """保存伦理批件"""
-        url = 'http://gcpmsapi.ashermed.cn/api/ProjectReport/SaveReportRecord'
+        url = host + '/ProjectReport/SaveReportRecord'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -266,7 +267,7 @@ class MyTestCase(unittest.TestCase):
 
     def test008shMater(self):
         """人遗调查表审核"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/Ethical/GeneticApproval'
+        url = host + '/Project/Ethical/GeneticApproval'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -293,7 +294,7 @@ class MyTestCase(unittest.TestCase):
 
     def test009shMater(self):
         """确认立项"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/Confirm'
+        url = host + '/Project/Confirm'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',
@@ -323,7 +324,7 @@ class MyTestCase(unittest.TestCase):
 
     def test010detMater(self):
         """删除项目数据"""
-        url = 'http://gcpmsapi.ashermed.cn/api/Project/delete'
+        url = host + '/Project/delete'
         headers = {
             'Token': ethics.token,
             'ClientType': '1',

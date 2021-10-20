@@ -2,8 +2,6 @@
 import logging
 import unittest
 import requests
-import time
-from public.ethics_public import host
 
 
 def __init__(self, requests):
@@ -17,7 +15,7 @@ class ethics:
         self.Token = token
 
     # 登录URL地址信息
-    url_login = host + '/v3/Login/SingleSignOnByLoginId?api-version=3'
+    url_login = 'http://91trialapi.ashermed.cn/api/v3/Login/SingleSignOnByLoginId?api-version=3'
     # body参数信息
     payload = {
         "loginId": "13681899297",
