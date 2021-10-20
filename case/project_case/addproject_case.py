@@ -617,7 +617,7 @@ class Addprojectcase(unittest.TestCase):
                           'Chrome/92.0.4515.107 Safari/537.36'
         }
         payload ={
-              "projectId": "978",
+              "projectId": edproject.rid,
               "stageName": "文件信息",
               "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
               "stageId": 4,
