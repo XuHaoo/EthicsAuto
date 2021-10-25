@@ -605,40 +605,36 @@ class Addprojectcase(unittest.TestCase):
     # 引入from unittestreport import rerun
     # 缺点是每个方法都需要进行引入
     # @rerun(count=3,interval=2)
-    def test017_addprojectcase(self):
-        """临床研究合同书审核"""
-        url = host + '/Project/ResearchAudit'
-        headers = {
-            'Token': ethics.token,
-            'ClientType': '1',
-            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
-            'Content-Type': 'application/json;charset=UTF-8',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                          'Chrome/92.0.4515.107 Safari/537.36'
-        }
-        payload ={
-              "projectId": edproject.rid,
-              "stageName": "文件信息",
-              "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
-              "stageId": 4,
-              "fileId": 3,
-              "status": 1,
-              "reason": "",
-              "userId": "2",
-              "userName": "张慧36"
-            }
-        result = requests.post(url=url, headers=headers, json=payload)
-        result = result.json()
-        detailedStatus = result["detailedStatus"]
-        # try:
-        #     self.assertTrue(detailedStatus == 1,'临床研究合同书审核成功')
-        # except IOError:
-        #     self.assertFalse('临床研究合同书审核失败',result)
-        if detailedStatus == 1:
-            self.assertTrue('临床研究合同书审核成功',print(result))
-        else:
-            # self.assertFalse 此关键字HtmlTestRunner识别Fail
-            self.assertFalse('临床研究合同书审核失败',print(result))
+    # def test017_addprojectcase(self):
+    #     """临床研究合同书审核"""
+    #     url = host + '/Project/ResearchAudit'
+    #     headers = {
+    #         'Token': ethics.token,
+    #         'ClientType': '1',
+    #         'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+    #         'Content-Type': 'application/json;charset=UTF-8',
+    #         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+    #                       'Chrome/92.0.4515.107 Safari/537.36'
+    #     }
+    #     payload ={
+    #           "projectId": edproject.rid,
+    #           "stageName": "文件信息",
+    #           "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
+    #           "stageId": 4,
+    #           "fileId": 3,
+    #           "status": 1,
+    #           "reason": "",
+    #           "userId": "2",
+    #           "userName": "张慧36"
+    #         }
+    #     result = requests.post(url=url, headers=headers, json=payload)
+    #     result = result.json()
+    #     detailedStatus = result["detailedStatus"]
+    #     if detailedStatus == 1:
+    #         self.assertTrue('临床研究合同书审核成功',print(result))
+    #     else:
+    #         # self.assertFalse 此关键字HtmlTestRunner识别Fail
+    #         self.assertFalse('临床研究合同书审核失败',print(result))
 
 
 if __name__ == '__main__':

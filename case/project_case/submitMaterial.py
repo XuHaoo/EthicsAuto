@@ -322,7 +322,221 @@ class MyTestCase(unittest.TestCase):
             self.assertFalse('确认立项失败', print(result))
             logging.error('确认立项失败', result)
 
-    def test010detMater(self):
+    # def test010detHist(self):
+    #     """查询项目历史信息"""
+    #     url = host + '/Ethical/queryEthicalHistory'
+    #     headers = {
+    #         'Token': ethics.token,
+    #         'ClientType': '1',
+    #         'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+    #         'Content-Type': 'application/json;charset=UTF-8',
+    #         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+    #                       'Chrome/92.0.4515.107 Safari/537.36'
+    #               }
+    #     payload = {
+    #           "projectId": edproject.rid,
+    #           "ethicalId": "undefined",
+    #           "userPage": "6"
+    #          }
+    #     result = requests.post(url=url,headers=headers,json=payload)
+    #     result = result.json()
+    #     detailedStatus = result["detailedStatus"]
+    #     if detailedStatus == 1:
+    #         self.assertTrue('查询项目历史信息成功', print(result))
+    #         logging.info('查询项目历史信息成功', result)
+    #     else:
+    #         self.assertFalse('查询项目历史信息失败', print(result))
+    #         logging.error('查询项目历史信息失败', result)
+
+    def test011detStop(self):
+        """项目暂停"""
+        url = host + '/Project/SaveApply'
+        headers = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+             }
+        payload = {
+              "applyId": 14,
+              "projectId": edproject.rid,
+              "applyType": "1",
+              "docUrl": "[{\"name\":\"ff.jpg\",\"id\":\"ff3471dcbd4ecb2d81076d3a48420dd6\",\"type\":\"image/jpeg\"}]",
+              "userId": "2",
+              "createUserName": "张慧36",
+              "userPage": "6",
+              "userName": "张慧36",
+              "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
+              "saveType": 2
+            }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目暂停成功', print(result))
+            logging.info('项目暂停成功', result)
+        else:
+            self.assertFalse('项目暂停失败', print(result))
+            logging.error('项目暂停失败', result)
+
+    def test012detStopAudit(self):
+        """项目暂停审核"""
+        url = host + '/Project/ReviewApply'
+        headers = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+        }
+        payload = {
+          "applyId": "20",
+          "projectId": edproject.rid,
+          "approveStatus": 1,
+          "remark": "",
+          "userId": "2",
+          "userName": "张慧36",
+          "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室"
+        }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目暂停审核成功', print(result))
+            logging.info('项目暂停审核成功', result)
+        else:
+            self.assertFalse('项目暂停审核失败', print(result))
+            logging.error('项目暂停审核失败', result)
+
+    def test013detRest(self):
+        """项目重启"""
+        url = host + '/Project/SaveApply'
+        headers = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+        }
+        payload ={
+          "applyId": 21,
+          "projectId": edproject.rid,
+          "applyType": "3",
+          "docUrl": "[{\"name\":\"微信截图_20210803132716.png\",\"id\":\"8be1199a878d665019b54a8efb031527\",\"type\":\"image/png\"}]",
+          "userId": "2",
+          "createUserName": "张慧36",
+          "userPage": "6",
+          "userName": "张慧36",
+          "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
+          "saveType": 2
+        }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目重启成功', print(result))
+            logging.info('项目重启成功', result)
+        else:
+            self.assertFalse('项目重启失败', print(result))
+            logging.error('项目重启失败', result)
+
+    def test014detRestAudit(self):
+        """项目重启审核"""
+        url = host + '/Project/ReviewApply'
+        headers = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+        }
+        payload = {
+              "applyId": "21",
+              "projectId": edproject.rid,
+              "approveStatus": 1,
+              "remark": "1111",
+              "userId": "2",
+              "userName": "张慧36",
+              "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室"
+            }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目重启审核成功', print(result))
+            logging.info('项目重启审核成功', result)
+        else:
+            self.assertFalse('项目重启审核失败', print(result))
+            logging.error('项目重启审核失败', result)
+
+    def test015detSuspend(self):
+        """项目中止"""
+        url = host + '/Project/SaveApply'
+        headers  = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+        }
+        payload = {
+          "projectId": edproject.rid,
+          "applyType": "2",
+          "docUrl": "[{\"name\":\"ss.jpg\",\"id\":\"c2a69ece4ce87f2d4d296467cf738e89\",\"type\":\"image/jpeg\"}]",
+          "userId": "2",
+          "createUserName": "张慧36",
+          "userPage": "6",
+          "userName": "张慧36",
+          "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室",
+          "saveType": 1
+        }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目中止成功', print(result))
+            logging.info('项目中止成功', result)
+        else:
+            self.assertFalse('项目中止失败', print(result))
+            logging.error('项目中止失败', result)
+
+    def test016detSuspendAudit(self):
+        """项目中止审核"""
+        url = host +'/Project/ReviewApply'
+        headers = {
+            'Token': ethics.token,
+            'ClientType': '1',
+            'ClientId': '5ad5b1b17dcc44ba5e15788b087ceea1',
+            'Content-Type': 'application/json;charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/92.0.4515.107 Safari/537.36'
+        }
+        payload = {
+              "applyId": "17",
+              "projectId": edproject.rid,
+              "approveStatus": 1,
+              "remark": "凄凄切切",
+              "userId": "2",
+              "userName": "张慧36",
+              "roleName": "科研处-形式审查,科研处-立项确认,学术专家,人遗审查,科研处,学术专家-快审,科研处-报告审查,科研处-账号管理,学术审查,方法学管理,研究者,科技处负责人,成果转化办公室"
+            }
+        result = requests.post(url=url, headers=headers, json=payload)
+        result = result.json()
+        detailedStatus = result["detailedStatus"]
+        if detailedStatus == 1:
+            self.assertTrue('项目中止审核成功', print(result))
+            logging.info('项目中止审核成功', result)
+        else:
+            self.assertFalse('项目中止审核失败', print(result))
+            logging.error('项目中止审核失败', result)
+
+    def test020detMater(self):
         """删除项目数据"""
         url = host + '/Project/delete'
         headers = {

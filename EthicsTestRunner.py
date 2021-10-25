@@ -11,6 +11,8 @@ from TestRunner import SMTP
 suite = unittest.TestSuite()
 
 # 添加多个测试用例
+
+# 新增项目测试用例
 suite.addTests([Addprojectcase("test001_addprojectcase"),
                 Addprojectcase("test002_addprojectcase"),
                 Addprojectcase("test003_addprojectcase"),
@@ -26,9 +28,11 @@ suite.addTests([Addprojectcase("test001_addprojectcase"),
                 Addprojectcase("test013_addprojectcase"),
                 Addprojectcase("test014_addprojectcase"),
                 Addprojectcase("test015_addprojectcase"),
-                Addprojectcase("test016_addprojectcase"),
-                Addprojectcase("test017_addprojectcase"),
-                MyTestCase("test001subMater"),
+                Addprojectcase("test016_addprojectcase")
+              # Addprojectcase("test017_addprojectcase"),
+                ])
+# 项目资料完善
+suite.addTests([MyTestCase("test001subMater"),
                 MyTestCase("test002saveMater"),
                 MyTestCase("test003manMater"),
                 MyTestCase("test004badMater"),
@@ -36,7 +40,14 @@ suite.addTests([Addprojectcase("test001_addprojectcase"),
                 MyTestCase("test006saMater"),
                 MyTestCase("test008shMater"),
                 MyTestCase("test009shMater"),
-                MyTestCase("test010detMater")
+               # MyTestCase("test010detHist"),
+                MyTestCase("test011detStop"),
+                MyTestCase("test012detStopAudit"),
+                MyTestCase("test013detRest"),
+                MyTestCase("test014detRestAudit"),
+                MyTestCase("test015detSuspend"),
+                MyTestCase("test016detSuspendAudit"),
+                MyTestCase("test020detMater")
                 ])
 
 #
@@ -58,7 +69,6 @@ suite.addTests([Addprojectcase("test001_addprojectcase"),
 # runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=reports_title, description=desc)
 # # 运行
 # # runner.run(suite)
-# # 运行
 
 # 新版测试报告，包含测试用例重试机制、日志
 report = "./result.html"
@@ -81,4 +91,4 @@ with(open(report, 'wb')) as fp:
     """
     # # 发邮件功能
     smtp = SMTP(user="2445955870@qq.com", password="uezqtcwexllveaii", host="smtp.qq.com")
-    smtp.sender(to="test@ashermed.com", attachments=report)
+    smtp.sender(to="2445955870@qq.com", attachments=report)
