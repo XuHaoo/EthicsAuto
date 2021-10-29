@@ -9,6 +9,7 @@ from public.ethics_public import host
 
 
 class Addprojectcase(unittest.TestCase):
+    """项目测试"""
 
     def test001_addprojectcase(self):
         """新增项目--项目概况表信息"""
