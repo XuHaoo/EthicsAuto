@@ -91,4 +91,4 @@ with(open(report, 'wb')) as fp:
     """
     # # 发邮件功能
     smtp = SMTP(user="2445955870@qq.com", password="uezqtcwexllveaii", host="smtp.qq.com")
-    smtp.sender(to="2445955870@qq.com", attachments=report)
+    smtp.sender(to="test@ashermed.com", attachments=report)
